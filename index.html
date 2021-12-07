@@ -1,332 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=icon href=favicon.png sizes="16x16" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Inicio - Rose Diaz</title>
-    <style>
-    body{
-        margin: 0;
-        padding: 0;
-        color:#5b687b;
-        font-family: 'Inter', sans-serif;
-    }
-    h2{
-        color:#4b5ebe;
-        margin-top: unset;
-    }
-    .nav-link{
-        display: inline;
-        float: right;
-        height: 36px;
-    }
-    .nav-element{
-        display: inline;
-        padding: 4px;
-        margin-right: 10px;
-    }
 
-    .avatar-header{
-        width: 30%;
-        border-radius: 50%;
-        border: 5px solid #8895bf;
-    }
-    .title-job{
-        text-transform: uppercase;
-        color: #8895bf;
-        font-weight: 400;
-        margin-bottom: 10px;
-    }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  <title>Inicio - Rosa Diaz</title>
+  <style>
+   
+  </style>
+</head>
 
-    .title-header{
-        color: #333c66;
-        margin-bottom: 50px;
-        margin-top: 0px;
-    }
-    .title-header-name{
-        color: #4b5ebe ;
-    }
-    .button-header{
-    background-color: #4b5ebe; 
-    color: white;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    }
-    .text-bold{
-        font-weight: bold;
-    }
-    .container{
-        width: 80%;
-        margin: auto;
-    }
-    .mb{
-        margin-bottom: 50px;
-    }
-    .image-full-width{
-        width: 100%;
-    }
-    .habilities{
-        display: flex;
-    }
-    .habilities-row{
-        display: inline;
-    }
-</style>
-  </head>
-  <body>
-      <!-- Inicia navbar -->
-    <nav>
-      <img
-        src=https://cdn.dribbble.com/users/833978/screenshots/2048790/artboard_2_copy.png
-        alt="Logo de mi sitio web"
-        height="64px"
-      />
+<body>
+  <div class="container">
+    <!-- Inicia navbar -->
+    <nav class="mb">
+      <img class="navbar-logo" src=https://cdn.dribbble.com/users/833978/screenshots/2048790/artboard_2_copy.png
+      alt="Logo de mi sitio web" />
       <!-- 
-       src: origen de la imagen
-    alt: Descripcion de la imagen
--->
-      <ul style="display: inline; float: right; height: 36px;">
-        <li style="display: inline; padding: 4px; margin-right: 10px; height: 36px;"></li>
-        <a href="#" style="text-decoration: none;">GitHub</a>
-        <li style="display: inline; padding: 4px; margin-right: 10px; height: 36px;"></li>
-        <a href="#" style="text-decoration: none;">LinkedIn</a>
+      src: Origen de la imágen
+      alt: Descripción de la imágine 
+    -->
+      <ul class="nav-link">
+        <li class="navbar-element">
+          <a class="navbar-link" href="github.html">GitHub</a>
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="https://www.linkedin.com/in/vmreyesal/">LinkedIn</a>
+        </li>
       </ul>
-      <!-- ul:lista desordenada (unorder list)
-        ol: lista ordenada-->
-    </nav>
-    <!-- Finaliza navbar -->
-    <!-- Inicia header -->
-    <header class="container mb">
-    <div class="container" style="display: inline;">
-        <img class="avatar-header" src="C:\Users\Jesus\Desktop\rose\blog\imagenes\amarilla.jpg" alt="Esta soy yo">
+      <!-- ul: lista desordenada (unorder list) -->
+  </div>
+  </nav>
+  <!-- Finaliza navbar -->
+  <!-- Inicia header -->
+  <header class="container mb">
+    <img class="avatar-header" src="C:\Users\Jesus\Desktop\rose\blog\imagenes\amarilla.jpg" alt="Esta soy yo">
+    <div style="display: inline; position: absolute; padding: 15px 50px 15px 50px;">
+      <h4 class="title-job">
+        React Developer
+      </h4>
+      <h1 class="title-header">
+        ¡Hola soy <span class="title-header-name">Rosa Diaz</span> y me gustaría ayudarte desarrollar tus ideas!
+      </h1>
+      <a class="button-header" href="https://github.com/oicrruf/">
+        Ver más
+      </a>
     </div>
-        <div style="display: inline; position:absolute; margin: 20px 50px; padding: 15px 50px">
-        <h4 class="title-job" >React Developer</h4>
-        <h1 class="title-header">Hola soy <span class="title-header-name">Rose Díaz</span>  y me gustaría ayudarte a desarrollar tus ideas!</h1>
-        <a class="button-header" href="https://github.com/Rosediaz2401">
-            Ver más
-        </a>
-    </div>
-        <!--a: sirve para anclar otros sitios web o paginas internas-->
-    </header>
-    <!-- Finaliza header -->
-    <!-- Inicia seccion de descripcion -->
-   <section class="container mt-50 mb-50" >
+    <!-- 
+      a: Sirve para anclar otros sitios web o páginas internas 
+    -->
+  </header>
+  <!-- Finaliza header -->
+  <!-- Inicia sección de descripción -->
+  <section class="container mt-50 mb-50">
     <p>
-        My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to use. Currently, I focus on building single-page applications with 
-        <span class="text-bold"> React </span>and <span class="text-bold"></span> Ember.</span>
+      My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for good design. I
+      love to make complex things simple and joy to use. Currently, I focus on building single-page applications with
+      <span class="text-bold">React</span> and <span class="text-bold">Ember</span>.
     </p>
     <p>
-        Over the past <strong>8 years </strong> I’ve gained experience across most aspects of the application lifecycle, including frontend, backend, and dev-ops. This allows me to take full ownership of a project from design to implementation and deployment.
+      Over the past <strong>8 years</strong>, I’ve gained experience across most aspects of the
+      application lifecycle, including
+      frontend, backend, and dev-ops. This allows me to take full ownership of a project from design to implementation
+      and deployment.
     </p>
     <p>
-        I started as a backend developer on <span class="text-bold"> Python/Django</span> stack. At some point, I found out that I enjoy contributing to user experience and design. Since then, I’ve changed my focus to frontend development.
+      I started as a backend developer on <span class="text-bold">Python/Django</span> stack. At some point, I found out
+      that I enjoy contributing to
+      user experience and design. Since then, I’ve changed my focus to frontend development.
     </p>
-   </section>
-   <!-- Finaliza seccion de descripcion -->
-   <!-- Inicia seccion de habilidades -->
-   <section style="background-color: rgb(221, 215, 215); padding:30px 0px; ">
-       <div class="container">
-    <h2>Habilidades</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, modi recusandae excepturi aliquam nemo vel quia ex dignissimos architecto nesciunt!</p>
-</div>    
-    <div class="habilities">
-       
-    <div class="habilities-row">
-            <div >
-            <!-- Inicia tarjeta de programacion -->
+  </section>
+  <!-- Finaliza sección de descripción -->
+  <!-- Inicia sección de habilidades -->
+  <section style="background-color: #f9f9fa; padding: 30px 0px 30px 0px;">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <p class="mb-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta, possimus deleniti quasi
+        labore
+        nostrum a
+        numquam repellat rerum quia!</p>
+      <div class="habilities">
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
             <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png" alt="c++" height="25px">
-            <h4>JavaScript</h4>  
-            <span>* 6 años</span>
-        </div>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis nostrum distinctio at molestias velit nisi, doloribus rerum explicabo, voluptatibus debitis porro possimus eius facere, eum pariatur! Rem, rerum placeat!
-            </p>
-        </div>
-        <div>
-            <span>Ember</span>
-            <span>React</span>
-            <span>Gatsby</span>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div style="display:inline-flex; width:20%; padding: 0 50px; margin:5px 80px 25px 50px;">
-        <div >
-                <div >
-                <!-- Inicia tarjeta de programacion -->
-                <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png" alt="c++" height="25px">
-                <h4>JavaScript</h4>  
-                <span>* 6 años</span>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
             </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis nostrum distinctio at molestias velit nisi, doloribus rerum explicabo, voluptatibus debitis porro possimus eius facere, eum pariatur! Rem, rerum placeat!
-                </p>
-            </div>
-            <div>
-                <span>Ember</span>
-                <span>React</span>
-                <span>Gatsby</span>
-            </div>
-        </div>
-        </div>
-        </div> <div style="display:inline-flex; width:20%; padding: 0 50px; margin:5px 80px 25px 50px;">
-            <div >
-                    <div >
-                    <!-- Inicia tarjeta de programacion -->
-                    <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png" alt="c++" height="25px">
-                    <h4>JavaScript</h4>  
-                    <span>* 6 años</span>
-                </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis nostrum distinctio at molestias velit nisi, doloribus rerum explicabo, voluptatibus debitis porro possimus eius facere, eum pariatur! Rem, rerum placeat!
-                    </p>
-                </div>
-                <div>
-                    <span>Ember</span>
-                    <span>React</span>
-                    <span>Gatsby</span>
-                </div>
-            </div>
-            </div>
-            </div>
-        </div> <div style="display:inline-flex; width:20%; padding: 0 50px; margin:5px 80px 25px 50px;">
-            <div >
-                    <div >
-                    <!-- Inicia tarjeta de programacion -->
-                    <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png" alt="c++" height="25px">
-                    <h4>JavaScript</h4>  
-                    <span>* 6 años</span>
-                </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis nostrum distinctio at molestias velit nisi, doloribus rerum explicabo, voluptatibus debitis porro possimus eius facere, eum pariatur! Rem, rerum placeat!
-                    </p>
-                </div>
-                <div>
-                    <span>Ember</span>
-                    <span>React</span>
-                    <span>Gatsby</span>
-                </div>
-            </div>
-            </div>
-            </div>
-   </section>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
 
-   <!-- Finaliza seccion de habilidades -->
-   <!-- Inicia seccion de algunos de mis proyectos -->
-   <section style="background-color: beige;">
-       <div class="container">
-       <h2>Algunos de mis proyectos</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquam.</p>
-  
-   </section>
-   <!-- Finaliza seccion de algunos de mis proyectos -->
-   <!-- Inicia seccion de imagen -->
-   <div style="display: inline-flex; width:25%">
-   <div style="border:4px solid grey; width:33%; border-radius: 10px;  width: 80%; height:400px;">
-    <h3>Proyecto 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</p>
-    <section>
-        <img src="https://www.esic.edu/sites/default/files/rethink/8ba013b5-customer-persona.jpg" alt="imagen decorativa" width="100%">
-        <div>
-            <span>Ember</span>
-            <span>React</span>
-            <span>Gatsby</span>
-                    </div>
-        <div>
-            <span>Full design / Development</span>
-    </section>
-   </div>
-</div>
-<div style="display: inline-flex; width:25%">
-     <div style="border:4px solid grey; width:33%; border-radius: 10px; width:80%; height:400px;">
-    <h3>Proyecto 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</p>
-    <section>
-        <img src="https://www.esic.edu/sites/default/files/rethink/8ba013b5-customer-persona.jpg" alt="imagen decorativa" width="100%">
-        <div>
-            <span>Ember</span>
-            <span>React</span>
-            <span>Gatsby</span>
-                    </div>
-        <div>
-            <span>Full design / Development</span>
-    </section>
-   </div>
-</div>
-<div style="display: inline-flex; width:25%">
-     <div style="border:4px solid grey; width:33%; border-radius: 10px; width:80%; height:400px;">
-    <h3>Proyecto 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</p>
-   <section class="image-full-width">
-       <img src="https://www.esic.edu/sites/default/files/rethink/8ba013b5-customer-persona.jpg" alt="imagen decorativa" width="100%">
-       <div>
-        <span>Ember</span>
-        <span>React</span>
-        <span>Gatsby</span>
-    
-                </div>
-    <div>
-        <span>Full design / Development</span> 
-    </section>
-    </div>
-</div>
-</div>
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
+        </div>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
+            <div>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
+            </div>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
 
-   <section style="background-color: beige;">
-       <div class="container">
-       <h2>Contáctanos</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quae numquam. Delectus, voluptatem. Ducimus omnis itaque sed, repellendus ullam at molestiae impedit dolor quod.</p>
-       <div>
-        <span>Ember</span>
-        <span>React</span>
-        <span>Gatsby</span>
-                </div>
-    <div>
-        <span>Full design / Development</span>
-    </div>
-    
-     <!-- Finaliza seccion de imagen -->
-     <!-- Inicia seccion de formulario -->
-    <img style="max-width: 300px;" src="https://images.ecestaticos.com/3NSJx7Qpj6wn7C14H4vMGm9svbU=/0x0:990x557/1600x900/filters:fill(white):format(JPG)/f.elconfidencial.com/original/62c/e5d/314/62ce5d3141c0b670144a692b7f6a21fa.jpg" alt="otra imagen">
-       <form action="#">
-           <input type="text" placeholder="Nombre">
-           <input type="text" placeholder="Email">
-           <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-           <button>Enviar</button>
-       </form>
-    </div>
-   </section>
-   <!-- Finaliza seccion de formulario -->
-   <!-- Inicia footer -->
-  <footer>
-      <div style="background-color:pink">
-          <p>Diseñado por Rose Diaz</p>
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
+        </div>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
+            <div>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
+            </div>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
+
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
+        </div>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
       </div>
-      <div style="background-color:blueviolet">
-        <ul>
-        <li>😊</li>
-        <li>😍</li>
-        <li>❤</li>
-        <li>😘</li>
-        <li>😁</li>
+    </div>
+  </section>
+  <!-- Finaliza sección de habilidades -->
+  <!-- Inicia sección de algunos de mi proyectos -->
+  <section style="background-color: #f9f9fa; padding: 30px 0px 30px 0px;">
+    <div class="container">
+      <h2>Algunos de mis proyectos</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sit!</p>
+      <div style="display: inline-flex;">
+        <div style="display: inline">
+          <!-- Inicia tarjeta de proyecto -->
+          <div style="border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
+            <h3>Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <!-- Etiquetas de proyecto -->
+            <div>
+              <span>Ember</span>
+              <span>React</span>
+              <span>Gatsby</span>
+            </div>
+            <div>
+              <span>Full desing & development</span>
+            </div>
+            <!-- Finaliza etiquetas de proyecto -->
+            <!-- Imágen de proyecto -->
+            <img src="https://ivanvotti.com/static/6c7cc6c9ead4655e892a24c6b593ff18/2e3ee/vertebrolog.webp" alt=""
+              width="100%">
+            <!-- Finaliza imagen de proyecto -->
+          </div>
+          <!-- Finaliza tarjeta de proyecto -->
+        </div>
+        <div style="display: inline">
+          <div style="border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div>
+              <span>Ember</span>
+              <span>React</span>
+              <span>Gatsby</span>
+            </div>
+            <div>
+              <span>Full desing & development</span>
+            </div>
+            <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt=""
+              width="100%">
+          </div>
+        </div>
+        <div style="display: inline">
+          <div style="border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
+            <h3>Proyecto 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div>
+              <span>Ember</span>
+              <span>React</span>
+              <span>Gatsby</span>
+            </div>
+            <div>
+              <span>Full desing & development</span>
+            </div>
+            <img src="https://ivanvotti.com/static/ccb2ec424120520a4e18ac40fb1e12ff/2e3ee/svgjar.webp" alt=""
+              width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Finaliza sección de algunos de mi proyectos -->
+  <!-- Inicia sección de imágen -->
+  <section>
+    <img class="image-full-width" src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp"
+      alt="Imagen decorativa">
+  </section>
+  <!-- Finaliza sección de imágen -->
+  <!-- Inicia sección de formulario -->
+  <section>
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aspernatur consequuntur facere eveniet vel rem
+        voluptates non delectus aliquid.</p>
+      <form action="#">
+        <div style=" margin-bottom: 5px;">
+          <input type="text" placeholder="Tu nombre">
+          <input type="text" placeholder="Tu correo electrónico">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+        <button style="display: block;">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- Finaliza sección de formulario -->
+  <!-- Inicia sección de footer -->
+  <footer style="padding: 20px 10px; background-color: #edf2f7;">
+    <div class="container">
+      <div style="display: inline;">
+        <p style="display: inline;">Diseñado por Rosa Diaz</p>
+      </div>
+      <div style="display: inline; float: right;">
+        <ul style="display: inline;">
+          <li style="display: inline;">🤓</li>
+          <li style="display: inline;">😍</li>
+          <li style="display: inline;">😒</li>
+          <li style="display: inline;">👌</li>
+          <li style="display: inline;">🥳</li>
         </ul>
       </div>
-  </footer> 
-  <script type="text/javascript"></script>
-  </body>
+    </div>
+
+  </footer>
+  <!-- Finaliza sección de footer -->
+</body>
+
 </html>
