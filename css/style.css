@@ -95,6 +95,9 @@ body {
     font-size: 13px;
     color: #4b5ebe;
   }
+  .navbar-link:hover{
+    color: #333c66;
+  }
 
   .mb {
     margin-bottom: 20px;
@@ -269,4 +272,8 @@ background-color: #dbdfff;
 .w-50{
   width: 50%;
   margin: auto;
+}
+a .project-single{
+  text-decoration: none;
+  z-index: 1000;
 }
