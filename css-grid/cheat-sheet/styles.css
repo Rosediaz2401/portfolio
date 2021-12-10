@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+  
+  :root {
+    --main-color: #b8001f;
+    --second-color: #00139f;
+    --text-light: #ffffff;
+  }
+  .grid{
+      background-color: pink;
+      color: white;
+      display: grid;
+      grid-template-columns: 20% 30% 30%;
+      grid-template-rows: auto 70px auto;
+  }
+  .grid >div{
+      background-color: var(--second-color);
+      color: white;
+  }
+  .grid-two{
+    background-color: pink;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid-two >div{
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-three{
+    background-color: pink;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,50px);
+    justify-items:center;
+    align-items:center;
+    height:30vh;
+}
+.grid-three >div{
+    background-color: var(--second-color);
+    color: white;
+}
+.grid-four{
+    background-color: pink;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 20% min-content;
+    grid-template-rows: 100px max-content;
+    justify-items:center;
+    align-items:center;
+    height:30vh;
+}
+.grid-four >div{
+    background-color: var(--second-color);
+    color: white;
+}
