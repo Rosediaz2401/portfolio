@@ -23,12 +23,14 @@ body {
 h2 {
   color: deeppink;
   margin-top: unset;
+  text-align: center;
 }
 
 .nav-link {
   display: inline;
   float: right;
   height: 36px;
+  justify-self: end;
 }
 
 .navbar-element {
@@ -38,7 +40,7 @@ h2 {
 }
 
 .avatar-header {
-  width: 30%;
+  width: 40%;
   border-radius: 4%;
   border: 5px solid #dee0e4;
   margin-top: 50px;
@@ -61,10 +63,8 @@ h2 {
 }
 
 .header-detail {
-  display: inline;
-  position: absolute;
-  padding: 71px 50px 15px 50px;
-  margin-top: 90px;
+  margin-top: 65px;
+  justify-self: start;
 }
 
 .title-header-name {
@@ -109,6 +109,7 @@ h2 {
 .navbar-logo {
   height: 56px;
   padding: 4px 0px;
+  justify-self: start;
 }
 
 .navbar-link {
@@ -126,9 +127,15 @@ h2 {
 }
 
 .mb {
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: flex-start;
 }
 
+.mb-project{
+  display: flex;
+}
 .mt-50 {
   margin-top: 50px;
 }
@@ -153,9 +160,13 @@ h2 {
     margin: auto;
 }
 
-.habilities,
-.projects {
+.projects{
   display: inline-flex;
+}
+.habilities {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 16px;
 }
 
 .hability-card {
@@ -182,6 +193,7 @@ h2 {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
+  margin: 10px;
 }
 
 .profile-tag {
@@ -190,6 +202,7 @@ h2 {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
+  margin: 10px;
 }
 
 /*.image-project-b{
@@ -355,4 +368,41 @@ h2 {
 .w-50 {
   width: 50%;
   margin: auto;
+}
+
+@media only screen and (max-width:475px){
+  .habilities,
+  .projects{
+    grid-template-columns: 100%;
+    grid-gap: 16px;
+    display: grid;
+  }
+  .mb{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .hability-card{
+    margin-bottom: 20px;
+  }
+  .nav-link{
+    display: flex;
+    justify-content: end;
+  }
+  .avatar-header{
+    display: none;
+  }
+  .header-detail{
+    padding: 30px 0px;
+  }
+  .title-header{
+    margin-bottom: 30px;
+    font-size: 38px;
+    text-align: justify;
+  }
+  .section-design__center{
+    width: 100%;
+  }
+  .mb-project{
+    display: flex;
+  }
 }
