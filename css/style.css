@@ -148,7 +148,9 @@ h2 {
   background-position: top;
 }
 .image-full-width {
-  width: 100%;
+  width: 80%;
+    display: block;
+    margin: auto;
 }
 
 .habilities,
@@ -265,6 +267,10 @@ h2 {
 
 .icon-list:hover {
   filter: grayscale(0%);
+}
+.icon-image{
+  height: 20px;
+  width: 20px;
 }
 
 /* .icon-list li:first-child,
