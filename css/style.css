@@ -89,6 +89,14 @@ h2 {
   background-color: deeppink;
   color: white;
 }
+.button-main:hover{
+  background-color: lightblue;
+  color: deeppink;
+}
+.button-secondary:hover{
+  background-color: lightblue;
+  color: deeppink;
+}
 
 .text-bold {
   font-weight: 600;
@@ -370,7 +378,7 @@ h2 {
   margin: auto;
 }
 
-@media only screen and (max-width:475px){
+@media only screen and (max-width:950px){
   .habilities,
   .projects{
     grid-template-columns: 100%;
@@ -395,7 +403,7 @@ h2 {
     padding: 30px 0px;
   }
   .title-header{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 38px;
     text-align: justify;
   }
@@ -405,4 +413,62 @@ h2 {
   .mb-project{
     display: flex;
   }
+  .nav-media{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+  }
+  .text-header{
+    margin-top: -10px;
+    text-align: justify;
+  }
+  .row {
+    display: grid;
+     grid-template-rows: 50% 50%;
+    justify-content: center;
+  }
+  .row * {
+    justify-self: center;
+    padding-top: 5px;
+  }
+  .float-right{
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width:1200px){
+
+  .mb{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .avatar-header{
+    width: 50%;
+    align-self: end;
+  }
+
+  .title-header{
+    margin-bottom: 40px;
+    font-size: 38px;
+    text-align: justify;
+  }
+  .section-design__center{
+    width: 100%;
+  }
+  .mb-project{
+    display: flex;
+  }
+  .nav-media{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+  }
+  .text-header{
+    text-align: justify;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
 }

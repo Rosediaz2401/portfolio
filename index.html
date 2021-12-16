@@ -21,7 +21,7 @@
 <body>
   <div class="container">
     <!-- Inicia navbar -->
-    <nav class="mb">
+    <nav class="mb nav-media">
       <img class="navbar-logo" src="brand/logo.jpg" alt="Logo de mi sitio web" />
       <!-- 
       src: Origen de la imágen
@@ -124,7 +124,7 @@
             <!-- Finaliza bloque superior -->
             <!-- Inicia bloque medio -->
 
-            <p class="hability-description">My favorite programming language, I focus on code quality and best practices.</p>
+            <p class="hability-description">This is my favorite programming language, I focus on code quality and best practices.</p>
             <!-- Finaliza bloque medio -->
             <!-- Inicia bloque bajo -->
             <div>
@@ -222,7 +222,7 @@
           <div class="project-single">
             <div class="project-card  -bg__purple">
               <h3>Project 3</h3>
-              <p>Let´s build something together.</p>
+              <p>You have seen some of my work, now let´s build something together.</p>
               <div class="mb mb-project">
                 <span class="project-tag">HTML5</span>
                 <span class="project-tag">CSS</span>
@@ -293,6 +293,15 @@
 
   </footer>
   <!-- Finaliza sección de footer -->
+  <script type="text/javascript">
+    function cambiarModo(){
+      var cuerpoweb= document.body;
+      let secciones= document.querySelectorAll(".section-design.bg__gray")
+      console.log(secciones)
+      cuerpoweb.classList.toggle("oscuro");
+      secciones[0].classList.toggle("oscuro");
+    }
+  </script>
 </body>
 
 </html>
