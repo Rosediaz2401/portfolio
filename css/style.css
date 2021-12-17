@@ -43,7 +43,7 @@ h2 {
   width: 40%;
   border-radius: 4%;
   border: 5px solid #dee0e4;
-  margin-top: 50px;
+  align-self: center;
 }
 
 .title-job {
@@ -378,6 +378,51 @@ h2 {
   margin: auto;
 }
 
+@media only screen and (max-width:650px){
+  .nav-media{
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    align-items: flex-start;
+  }
+  .habilities,
+  .projects{
+    grid-template-columns: 100%;
+    grid-gap: 16px;
+    display: grid;
+  }
+  .mb{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .avatar-header{
+    display: none;
+  }
+  .title-header{
+    font-size: 30px;
+  }
+  .text-header{
+    text-align: justify;
+  }
+  .section-design__center p {
+    text-align: justify;
+}
+.button-secondary{
+  padding: 10px;
+}
+.-bg__blue-light{
+  font-size: 15px;
+}
+.row * {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-list{
+  padding: 20px 8px;
+}
+}
+
+
 @media only screen and (max-width:950px){
   .habilities,
   .projects{
@@ -404,7 +449,7 @@ h2 {
   }
   .title-header{
     margin-bottom: 40px;
-    font-size: 38px;
+    font-size: 32px;
     text-align: justify;
   }
   .section-design__center{
