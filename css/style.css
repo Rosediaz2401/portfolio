@@ -378,6 +378,28 @@ h2 {
   margin: auto;
 }
 
+@media only screen and (max-width:450px){
+  .navbar-logo{
+    display:none
+  }
+  .nav-link{
+    justify-self: center;
+  }
+  #contact-form .from{
+    grid-template-columns: none;
+    grid-gap: 0px;
+  }
+  .button-main{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:650px){
+  #contact-form .from{
+    grid-template-columns: none;
+    grid-gap: 0px;
+  }
+}
+
 @media only screen and (max-width:650px){
   .nav-media{
     display: grid !important;
@@ -490,6 +512,7 @@ h2 {
   .avatar-header{
     width: 50%;
     align-self: end;
+    margin-top: 25px;
   }
 
   .title-header{
