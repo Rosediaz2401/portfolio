@@ -118,6 +118,7 @@ h2 {
   height: 56px;
   padding: 4px 0px;
   justify-self: start;
+  display: none;
 }
 
 .navbar-link {
@@ -169,7 +170,9 @@ h2 {
 }
 
 .projects{
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
 }
 .habilities {
   display: grid;
@@ -242,6 +245,7 @@ h2 {
   border-radius: 10px;
   padding: 15px;
   transition: all 0.12s ease-out;
+  height: 490px;
 }
 
 .project-card:hover {
@@ -356,6 +360,9 @@ h2 {
 .-bg__blue {
   background-color: #d6edff;
 }
+.-bg__pink {
+  background-color: #ffd6ef;
+}
 
 .-bg__purple {
   background-color: #dbdfff;
@@ -392,25 +399,28 @@ h2 {
   .button-main{
     font-size: 18px;
   }
+  
 }
+
+
 @media only screen and (max-width:650px){
   #contact-form .from{
     grid-template-columns: none;
     grid-gap: 0px;
   }
-}
-
-@media only screen and (max-width:650px){
   .nav-media{
     display: grid !important;
     grid-template-columns: 50% 50% !important;
     align-items: flex-start;
   }
-  .habilities,
-  .projects{
+  .habilities{
     grid-template-columns: 100%;
     grid-gap: 16px;
     display: grid;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 100%;
   }
   .mb{
     display: grid;
@@ -446,11 +456,15 @@ h2 {
 
 
 @media only screen and (max-width:950px){
-  .habilities,
-  .projects{
+  .habilities{
     grid-template-columns: 100%;
     grid-gap: 16px;
     display: grid;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
   }
   .mb{
     display: grid;
@@ -527,16 +541,17 @@ h2 {
     display: flex;
   }
   .nav-media{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: flex-start;
+    display: flex;
+    align-items: unset;
+    justify-content: flex-end;
   }
   .text-header{
     text-align: justify;
   }
   .projects{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
   }
 
 }
