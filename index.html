@@ -269,11 +269,11 @@
       </div>
       <form action="https://formspree.io/f/xeqdobro" accept-charset="utf-8" id="fs-frm" class="contact-form" method="POST">
         <div class="from">
-          <input id="fs-frm-inputs" type="text" placeholder="Name">
-          <input type="email" placeholder="E-mail">
+          <input id="fs-frm-inputs" type="text" name="name"  id="full-name" placeholder="Name" required="">
+          <input type="email" name="_replyto" id="email-address" placeholder="Your email" required="">
         </div>
         <div>
-          <textarea rows="10" placeholder="Message"></textarea>
+          <textarea rows="10"  name="message" id="message" placeholder="Message" required=""></textarea>
         </div>
         <div class="button-contact">
           <button class="button-main button-secondary" type="submit">Send Message</button>
