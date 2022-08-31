@@ -177,7 +177,7 @@ h2 {
 .habilities {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 16px;
+  grid-gap: 32px;
 }
 
 .hability-card {
@@ -204,7 +204,7 @@ h2 {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .profile-tag {
@@ -303,26 +303,26 @@ h2 {
   font-size: 60px;
 } */
 
-#contact-form {
+.contact-form {
   margin: auto;
   display: block;
   width: 60%;
   margin-bottom: 30px;
 }
 
-#contact-form .from {
+.contact-form .from {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
 
-#contact-form input {
+.contact-form input {
   width: 100%;
   margin-bottom: 10px;
 }
 
-#contact-form textarea,
-#contact-form input {
+.contact-form textarea,
+.contact-form input {
   background-color: #edf2f7;
   border: unset;
   padding: 10px;
@@ -330,6 +330,7 @@ h2 {
   box-shadow: 0 0 0 2px #edf2f7;
   transition: all 0.15s ease-out;
   color: #2d3748;
+  width: 100%;
 }
 
 #contact-form textarea:hover,
@@ -399,7 +400,6 @@ h2 {
   .button-main{
     font-size: 18px;
   }
-  
 }
 
 
